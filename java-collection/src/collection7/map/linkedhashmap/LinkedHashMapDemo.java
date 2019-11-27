@@ -1,6 +1,8 @@
 package collection7.map.linkedhashmap;
 
+import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.Set;
 
 public class LinkedHashMapDemo {
 
@@ -38,6 +40,13 @@ public class LinkedHashMapDemo {
 		System.out.println(lHashMap5.get(2));
 		System.out.println("lHashMap5: " + lHashMap5);
 		
+//		
+		Set<Integer> keys = lHashMap5.keySet();
+		Iterator<Integer> keysItr = keys.iterator();
+		System.out.println("lHashMap5: Iterating keys");
+		while(keysItr.hasNext()) {
+			System.out.println(keysItr.next());
+		}
 //		Other methods practise
 	}
 
